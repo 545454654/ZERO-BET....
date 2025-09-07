@@ -14,8 +14,49 @@
       background:radial-gradient(1200px 800px at 80% -10%,#122039 0%,#0b0f17 50%,#060a12 100%), var(--bg);
       font-family:"Cairo", system-ui, sans-serif;color:var(--text);overflow-x:hidden;
     }
-    .wrap{max-width:1200px;margin:0 auto;padding:12px;}
-    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-    @keyframes slideDown{from{transform:translateY(-50px);opacity:0}to{transform:translateY(0);opacity:1}}
-    @keyframes slideUp{from{transform:translateY(50px);opacity:0}to{transform:translateY(0);opacity:1}}
-    @keyframes pop{0%{transform:scale(0.3);opacity:0}70%{transform:scale(1.1);opacity:1}100%{transform:scal
+    #loginScreen{
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      height:100vh;text-align:center;gap:16px;
+    }
+    #loginScreen a.logo-link img.logo{
+      width:120px;height:auto;margin-bottom:10px;
+    }
+    #loginScreen h2{color:var(--accent);margin-bottom:8px}
+    #userId{
+      padding:10px;font-size:1rem;width:220px;text-align:center;
+      border-radius:8px;border:1px solid var(--line);
+      background:rgba(255,255,255,0.02);color:var(--text);
+    }
+    #status{margin-top:12px;font-weight:bold;min-height:1.2rem}
+    .lang-box{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+    .lang-btn{
+      border:1px solid #0c2e41;border-radius:8px;padding:6px 10px;background:#12394c;
+      color:#fff;cursor:pointer;font-weight:bold;font-size:.85rem;
+      transition:transform .15s, background .15s;
+    }
+    .lang-btn:hover{transform:scale(1.05);background:#1a4d66}
+    .link{margin-top:8px;font-size:1.1rem;font-weight:bold;color:var(--accent)}
+  </style>
+</head>
+<body>
+  <!-- شاشة البداية -->
+  <div id="loginScreen">
+    <!-- اللوجو فيه لينك -->
+    <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" class="logo-link">
+      <img src="logo.png" alt="ZERO_BET Logo" class="logo">
+    </a>
+    <!-- الاسم -->
+    <div class="link">ZERO_BET</div>
+
+    <h2 id="platform">المنصة: Linebet</h2>
+    <input type="text" id="userId" maxlength="10" inputmode="numeric" pattern="\d*" placeholder="أدخل المعرف (9-10 أرقام)">
+    <div id="status"></div>
+    <div class="lang-box">
+      <button class="lang-btn" data-lang="ar">عربي</button>
+      <button class="lang-btn" data-lang="en">English</button>
+      <button class="lang-btn" data-lang="fr">Français</button>
+      <button class="lang-btn" data-lang="bn">বাংলা</button>
+    </div>
+  </div>
+</body>
+</html>
