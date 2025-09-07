@@ -24,6 +24,7 @@
 
   /* شاشة البداية */
   #loginScreen{
+    
     display:flex;flex-direction:column;align-items:center;justify-content:center;
     height:100vh;text-align:center;gap:16px;animation:fadeIn 1s ease;
   }
@@ -143,10 +144,10 @@
   const btnReveal=document.getElementById('reveal'),btnNew=document.getElementById('new');
   const odds=["x1.23","x1.54","x1.93","x2.41","x4.02","x6.71","x11.18","x27.92","x69.93","x349.68"];
   const translations={
-    ar:{platform:"المنصة: 1XBET",placeholder:"أدخل المعرف (9-10 أرقام)",online:"متصلون",id:"المعرّف",reveal:"إظهار الكل",new:"لعبة جديدة",link:"https://t.me/nerovipbet "},
-    en:{platform:"Platform: 1XBET",placeholder:"Enter ID (9-10 digits)",online:"Online",id:"ID",reveal:"Reveal All",new:"New Game",link:"Telegram Channel"},
-    fr:{platform:"Plateforme: 1XBET",placeholder:"Entrez l'ID (9-10 chiffres)",online:"En ligne",id:"ID",reveal:"Tout Révéler",new:"Nouveau Jeu",link:"Chaîne Telegram"},
-    bn:{platform:"প্ল্যাটফর্ম: 1XBET",placeholder:"আইডি দিন (৯-১০ সংখ্যা)",online:"অনলাইন",id:"আইডি",reveal:"সব দেখাও",new:"নতুন খেলা",link:"টেলিগ্রাম চ্যানেল"}
+    ar:{platform:"المنصة: Linebet",placeholder:"أدخل المعرف (9-10 أرقام)",online:"متصلون",id:"المعرّف",reveal:"إظهار الكل",new:"لعبة جديدة",link:"https://t.me/nerovipbet "},
+    en:{platform:"Platform: Linebet",placeholder:"Enter ID (9-10 digits)",online:"Online",id:"ID",reveal:"Reveal All",new:"New Game",link:"Telegram Channel"},
+    fr:{platform:"Plateforme: Linebet",placeholder:"Entrez l'ID (9-10 chiffres)",online:"En ligne",id:"ID",reveal:"Tout Révéler",new:"Nouveau Jeu",link:"Chaîne Telegram"},
+    bn:{platform:"প্ল্যাটফর্ম: Linebet",placeholder:"আইডি দিন (৯-১০ সংখ্যা)",online:"অনলাইন",id:"আইডি",reveal:"সব দেখাও",new:"নতুন খেলা",link:"টেলিগ্রাম চ্যানেল"}
   };
   function setLang(lang){
     const t=translations[lang];
@@ -192,7 +193,10 @@
   setInterval(updateHUD,3000);
 
   // شاشة التسجيل
+
   const userIdInput=document.getElementById('userId');
+
+
   const statusEl=document.getElementById('status');
   userIdInput.addEventListener('input',()=>{
     const v=userIdInput.value;
@@ -208,5 +212,9 @@
   });
   setLang("ar");
 </script>
+
+<img src="blob:https://web.telegram.org/36443666-6732-411a-afab-772c4673134b" alt="blob:https://web.telegram.org/36443666-6732-411a-afab-772c4673134b">
+
+<h1>ZERO_BET</h1>
 
 </body></html>
